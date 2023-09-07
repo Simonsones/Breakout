@@ -461,19 +461,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\b23simso\\.nuget\\packages\\": {}
+    "C:\\Users\\d23linst\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\b23simso\\breakout\\breakout.csproj",
+      "projectUniqueName": "C:\\Users\\d23linst\\RiderProjects\\Breakout\\breakout.csproj",
       "projectName": "breakout",
-      "projectPath": "C:\\Users\\b23simso\\breakout\\breakout.csproj",
-      "packagesPath": "C:\\Users\\b23simso\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\b23simso\\breakout\\obj\\",
+      "projectPath": "C:\\Users\\d23linst\\RiderProjects\\Breakout\\breakout.csproj",
+      "packagesPath": "C:\\Users\\d23linst\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\d23linst\\RiderProjects\\Breakout\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\b23simso\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\d23linst\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
