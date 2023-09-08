@@ -13,6 +13,9 @@ namespace breakout
         {
             Clock clock = new Clock();
             Ball ball = new Ball();
+            Paddle paddle = new Paddle();
+            Tiles tiles = new Tiles();
+            
             using (RenderWindow window = new RenderWindow(new VideoMode(ScreenW, ScreenH), "Breakout"))
             {
                 window.Closed += (s, e) => window.Close();
@@ -21,10 +24,19 @@ namespace breakout
                 {
                     float deltaTime = clock.Restart().AsSeconds();
                     window.DispatchEvents();
-                    ball.Update(deltaTime);
+                    ball.Update(paddle, deltaTime);
+                    paddle.Update(ball, deltaTime);
                     window.Clear(new Color(131, 197, 235));
                     ball.Draw(window);
+                    paddle.Draw(window);
+                    tiles.Draw(window);
+                    
                     window.Display();
+                    if (ball.Health <= 0)
+                    {
+                        ball = new Ball();
+                        paddle = new Paddle();
+                    }
                 }
             }
             
